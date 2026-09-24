@@ -1,12 +1,22 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="bright" data-accent="blue">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Robotics Parallel Spiral — Codex Supervision Pathway</title>
   <meta name="description" content="A cost-conscious, simulation-first robotics learning pathway designed to prepare you to direct Codex and other AI coding platforms effectively." />
   <link rel="manifest" href="manifest.webmanifest" />
-  <meta name="theme-color" content="#071017" />
+  <meta name="theme-color" content="#f5f9ff" />
+  <script>
+    (() => {
+      try {
+        const theme = localStorage.getItem('roboticsTheme') || 'bright';
+        const accent = localStorage.getItem('roboticsAccent') || 'blue';
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.dataset.accent = accent;
+      } catch {}
+    })();
+  </script>
   <link rel="icon" href="icons/icon-192.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -14,12 +24,38 @@
 <header class="hero" id="top">
   <nav class="nav">
     <a class="brand" href="#top">Robotics Parallel Spiral</a>
-    <div class="navlinks">
-      <a href="#overview">Overview</a>
-      <a href="#free">Free Phase</a>
-      <a href="#sprint">2-Month Sprint</a>
-      <a href="#codex">Codex Gate</a>
-      <a href="#certs">Credentials</a>
+    <div class="nav-right">
+      <div class="navlinks">
+        <a href="#overview">Overview</a>
+        <a href="#free">Free Phase</a>
+        <a href="#sprint">2-Month Sprint</a>
+        <a href="#codex">Codex Gate</a>
+        <a href="#certs">Credentials</a>
+      </div>
+      <details class="appearance">
+        <summary>☀ Appearance</summary>
+        <div class="appearance-panel">
+          <label>
+            <span>Theme</span>
+            <select id="themeSelect">
+              <option value="bright">Bright</option>
+              <option value="soft">Soft Light</option>
+              <option value="dark">Dark</option>
+              <option value="contrast">High Contrast</option>
+            </select>
+          </label>
+          <fieldset>
+            <legend>Accent</legend>
+            <div class="swatches">
+              <button type="button" data-accent-choice="blue" aria-label="Blue accent"></button>
+              <button type="button" data-accent-choice="green" aria-label="Green accent"></button>
+              <button type="button" data-accent-choice="gold" aria-label="Gold accent"></button>
+              <button type="button" data-accent-choice="purple" aria-label="Purple accent"></button>
+            </div>
+          </fieldset>
+          <p>Your choice is saved on this device.</p>
+        </div>
+      </details>
     </div>
   </nav>
 

@@ -30,3 +30,35 @@ document.getElementById('resetProgress').addEventListener('click', () => {
   }
 });
 load();
+
+
+// Appearance preferences
+const themeKey = 'roboticsTheme';
+const accentKey = 'roboticsAccent';
+const themeColors = {bright:'#f5f9ff', soft:'#fffaf1', dark:'#071017', contrast:'#ffffff'};
+
+function applyAppearance(theme, accent) {
+  document.documentElement.dataset.theme = theme;
+  document.documentElement.dataset.accent = accent;
+  localStorage.setItem(themeKey, theme);
+  localStorage.setItem(accentKey, accent);
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.setAttribute('content', themeColors[theme] || themeColors.bright);
+  const select = document.getElementById('themeSelect');
+  if (select) select.value = theme;
+  document.querySelectorAll('[data-accent-choice]').forEach(btn => {
+    btn.classList.toggle('is-active', btn.dataset.accentChoice === accent);
+  });
+}
+const savedTheme = localStorage.getItem(themeKey) || 'bright';
+const savedAccent = localStorage.getItem(accentKey) || 'blue';
+applyAppearance(savedTheme, savedAccent);
+
+document.getElementById('themeSelect')?.addEventListener('change', e => {
+  applyAppearance(e.target.value, document.documentElement.dataset.accent || 'blue');
+});
+document.querySelectorAll('[data-accent-choice]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    applyAppearance(document.documentElement.dataset.theme || 'bright', btn.dataset.accentChoice);
+  });
+});
