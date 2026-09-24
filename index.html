@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Robotics Parallel Spiral — Codex Supervision Pathway</title>
+  <meta name="description" content="A cost-conscious, simulation-first robotics learning pathway designed to prepare you to direct Codex and other AI coding platforms effectively." />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#071017" />
+  <link rel="icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="hero" id="top">
+  <nav class="nav">
+    <a class="brand" href="#top">Robotics Parallel Spiral</a>
+    <div class="navlinks">
+      <a href="#overview">Overview</a>
+      <a href="#free">Free Phase</a>
+      <a href="#sprint">2-Month Sprint</a>
+      <a href="#codex">Codex Gate</a>
+      <a href="#certs">Credentials</a>
+    </div>
+  </nav>
+
+  <div class="hero-grid">
+    <section>
+      <p class="eyebrow">SIMULATION-FIRST • COST-CONSCIOUS • AI-READY</p>
+      <h1>Learn robotics deeply enough to <span>direct AI coding agents</span>, not merely accept their code.</h1>
+      <p class="lead">
+        A parallel-spiral pathway for Python, C++, Git, Linux/Bash, robotics mathematics, ROS 2,
+        Gazebo, navigation, control, testing, and professional engineering judgment.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#free">Begin with the free phase</a>
+        <a class="btn" href="#sprint">See the paid sprint</a>
+      </div>
+      <div class="pills">
+        <span>Free foundations first</span>
+        <span>Only two paid months planned</span>
+        <span>ROS + math in parallel</span>
+        <span>Human keeps architecture authority</span>
+      </div>
+    </section>
+
+    <aside class="hero-card">
+      <div class="card-kicker">TARGET OUTCOME</div>
+      <h2>Codex-Supervision Ready</h2>
+      <ul>
+        <li>Design a ROS graph before asking AI to code it.</li>
+        <li>Read Python and C++ ROS nodes.</li>
+        <li>Trace sensors → state → planning → control → actuator.</li>
+        <li>Understand frames, transforms, kinematics, feedback and uncertainty.</li>
+        <li>Test AI-generated work in simulation and Git.</li>
+        <li>Reject unsafe shortcuts, especially direct AI-to-actuator control.</li>
+      </ul>
+    </aside>
+  </div>
+</header>
+
+<main>
+<section class="section" id="overview">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">THE MODEL</p>
+      <h2>One main spine. Two complements. No course overload.</h2>
+    </div>
+  </div>
+
+  <div class="spine">
+    <article class="spine-card main">
+      <span class="tag">MAIN SPINE</span>
+      <h3>The Construct</h3>
+      <p>Use it for robotics-specific Python/C++/Linux foundations, then ROS 2, TF, URDF, Navigation, ros2_control and hands-on simulated/remote robot work.</p>
+    </article>
+    <article class="spine-card">
+      <span class="tag">COMPLEMENT 1</span>
+      <h3>Official ROS ecosystem docs</h3>
+      <p>Use ROS 2, Nav2 and Gazebo documentation to verify APIs, architecture and current best-practice behavior. This is your authoritative technical reference.</p>
+    </article>
+    <article class="spine-card">
+      <span class="tag">COMPLEMENT 2</span>
+      <h3>Modern Robotics</h3>
+      <p>Use Northwestern's book/videos selectively when the software exposes a math gap: frames, transformations, kinematics, Jacobians, planning and control.</p>
+    </article>
+  </div>
+
+  <div class="principle">
+    <strong>Rule:</strong> The Construct tells you how to build it. Official documentation tells you what the software actually expects. Modern Robotics helps you understand why the robot mathematics works.
+  </div>
+</section>
+
+<section class="section progress-section">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">TRACKER</p>
+      <h2>Your pathway progress</h2>
+    </div>
+    <button id="resetProgress" class="btn small">Reset</button>
+  </div>
+  <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+  <div class="progress-line">
+    <strong id="progressText">0% complete</strong>
+    <span id="progressCount">0 / 0 milestones</span>
+  </div>
+</section>
+
+<section class="section" id="free">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">PHASE 0 — FREE PREPARATION</p>
+      <h2>Do every foundation you can before the paid clock starts.</h2>
+      <p class="sub">There is no fixed deadline. Stay free until the readiness gate is passed.</p>
+    </div>
+    <div class="price-card">
+      <span>Target cost</span>
+      <strong>$0</strong>
+      <small>before optional books/exams</small>
+    </div>
+  </div>
+
+  <div class="lane-grid">
+
+    <article class="lane">
+      <div class="lane-title"><span>01</span><h3>Python</h3></div>
+      <p><b>W3Schools:</b> tutorial fundamentals + functions + modules + exceptions + core classes.</p>
+      <p><b>The Construct Basic:</b> complete Python 3 for Robotics.</p>
+      <div class="must">Stop line: classes, <code>__init__</code>, methods, lists/dicts, imports and debugging feel understandable.</div>
+      <label><input type="checkbox" data-task> I can write and explain a small Robot class.</label>
+      <label><input type="checkbox" data-task> I can break a program into functions/modules.</label>
+    </article>
+
+    <article class="lane">
+      <div class="lane-title"><span>02</span><h3>C++</h3></div>
+      <p><b>W3Schools:</b> fundamentals, functions, classes, constructors, references, pointers, <code>std::vector</code>, exceptions/debugging.</p>
+      <p><b>The Construct Basic:</b> complete C++ for Robotics.</p>
+      <div class="must">Stop line: you can read a class, compile a small program, and explain reference vs pointer at a basic level.</div>
+      <label><input type="checkbox" data-task> I can build a basic Robot class in C++.</label>
+      <label><input type="checkbox" data-task> I understand vector, reference and basic pointer use.</label>
+    </article>
+
+    <article class="lane">
+      <div class="lane-title"><span>03</span><h3>Linux / Bash</h3></div>
+      <p><b>The Construct Basic:</b> complete Linux for Robotics.</p>
+      <p><b>W3Schools Bash:</b> filesystem and essential shell commands only; full Bash scripting can wait.</p>
+      <div class="must">Know: <code>pwd ls cd mkdir cp mv rm cat grep chmod sudo apt source</code>.</div>
+      <label><input type="checkbox" data-task> I can navigate and manage files entirely from the terminal.</label>
+      <label><input type="checkbox" data-task> I understand paths, permissions and sourcing an environment.</label>
+    </article>
+
+    <article class="lane">
+      <div class="lane-title"><span>04</span><h3>Git / GitHub</h3></div>
+      <p><b>W3Schools Git + GitHub Skills:</b> use free materials instead of paying for a separate Git course.</p>
+      <div class="must">Know: <code>clone status add commit log branch switch merge pull push</code>.</div>
+      <label><input type="checkbox" data-task> I can create a branch, commit a change and merge it.</label>
+      <label><input type="checkbox" data-task> My practice projects live in Git repositories.</label>
+    </article>
+
+    <article class="lane">
+      <div class="lane-title"><span>05</span><h3>Robotics Mathematics</h3></div>
+      <p><b>College math continues.</b> Do not delay ROS waiting to finish calculus, differential equations or linear algebra.</p>
+      <p><b>Modern Robotics selectively:</b> configuration space, vectors/frames, rotation matrices and homogeneous transforms first.</p>
+      <div class="must">Entry math: algebra, trig, radians, vectors, basic matrices, coordinates, derivative as rate of change.</div>
+      <label><input type="checkbox" data-task> I can explain a vector and coordinate frame.</label>
+      <label><input type="checkbox" data-task> I understand rotation/translation conceptually.</label>
+    </article>
+
+    <article class="lane">
+      <div class="lane-title"><span>06</span><h3>ROS Preview</h3></div>
+      <p>Use The Construct Basic first-unit previews and official ROS beginner CLI material.</p>
+      <div class="must">Learn vocabulary before paying: node, topic, publisher, subscriber, service, action, parameter, package, workspace.</div>
+      <label><input type="checkbox" data-task> I can explain topic vs service vs action.</label>
+      <label><input type="checkbox" data-task> I can inspect a simple ROS graph conceptually.</label>
+    </article>
+  </div>
+
+  <div class="gate">
+    <span class="gate-label">SUBSCRIPTION GATE</span>
+    <h3>Do not start Month 1 until all six lanes above are functional.</h3>
+    <p>You do not need mastery. You need enough fluency that the paid ROS course does not repeatedly send you back to learn basic syntax, terminal use, Git or elementary math.</p>
+  </div>
+</section>
+
+<section class="section" id="sprint">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">PHASE 1 — TWO-MONTH INTENSIVE</p>
+      <h2>Spend paid time on robotics-specific knowledge.</h2>
+      <p class="sub">Current Learner monthly price shown by The Construct: €39.97/month. Two consecutive months ≈ €79.94 before taxes, subject to change.</p>
+    </div>
+  </div>
+
+  <div class="month">
+    <div class="month-banner">
+      <span>MONTH 1</span>
+      <h3>ROS Foundations + Robot Representation</h3>
+      <p>Goal: understand how robot software is structured and communicated.</p>
+    </div>
+
+    <div class="week-grid">
+      <article class="week">
+        <span>WEEK 1</span>
+        <h4>ROS 2 Python</h4>
+        <ul>
+          <li>packages / workspaces / colcon</li>
+          <li>nodes and ROS graph</li>
+          <li>topics and messages</li>
+          <li>services and actions</li>
+          <li>parameters / launch / callbacks</li>
+        </ul>
+        <div class="support"><b>Complement:</b> official ROS tutorial for every concept that feels fuzzy.</div>
+        <label><input type="checkbox" data-task> Build a Python publisher/subscriber system without copying line-by-line.</label>
+      </article>
+
+      <article class="week">
+        <span>WEEK 2</span>
+        <h4>ROS 2 C++</h4>
+        <ul>
+          <li>rclcpp node structure</li>
+          <li>publishers / subscribers</li>
+          <li>services / actions</li>
+          <li>executors and callbacks</li>
+          <li>build/package structure</li>
+        </ul>
+        <div class="support"><b>Codex use:</b> ask it to review your node after you write the first version yourself.</div>
+        <label><input type="checkbox" data-task> Make Python and C++ nodes communicate.</label>
+      </article>
+
+      <article class="week">
+        <span>WEEK 3</span>
+        <h4>TF + Frames + Math</h4>
+        <ul>
+          <li>frame trees</li>
+          <li>static/dynamic transforms</li>
+          <li>base, sensor and world frames</li>
+          <li>rotation + translation intuition</li>
+        </ul>
+        <div class="support"><b>Modern Robotics:</b> use rigid-body motion and transformation material only as needed.</div>
+        <label><input type="checkbox" data-task> Explain why a sensor reading must be transformed between frames.</label>
+      </article>
+
+      <article class="week">
+        <span>WEEK 4</span>
+        <h4>URDF + RViz + Gazebo</h4>
+        <ul>
+          <li>links and joints</li>
+          <li>robot description</li>
+          <li>visual/collision/inertial concepts</li>
+          <li>spawn and inspect in simulation</li>
+          <li>visualize in RViz</li>
+        </ul>
+        <div class="support"><b>Complement:</b> official Gazebo/ROS integration docs only when setup or bridge behavior is unclear.</div>
+        <label><input type="checkbox" data-task> Build and visualize your own simple mobile robot model.</label>
+      </article>
+    </div>
+  </div>
+
+  <div class="month second">
+    <div class="month-banner">
+      <span>MONTH 2</span>
+      <h3>Autonomy + Control + Engineering Judgment</h3>
+      <p>Goal: understand the software layers that turn a robot description into autonomous behavior.</p>
+    </div>
+
+    <div class="week-grid">
+      <article class="week">
+        <span>WEEKS 5–6</span>
+        <h4>Nav2 / Autonomous Navigation</h4>
+        <ul>
+          <li>mapping / SLAM</li>
+          <li>localization</li>
+          <li>odometry and sensors</li>
+          <li>global planning</li>
+          <li>local controllers</li>
+          <li>costmaps / obstacle avoidance</li>
+          <li>behavior trees and recovery</li>
+        </ul>
+        <div class="support"><b>Complement:</b> official Nav2 First-Time Robot Setup Guide when integrating the full stack.</div>
+        <label><input type="checkbox" data-task> Robot maps, localizes, accepts a goal and navigates around obstacles.</label>
+      </article>
+
+      <article class="week">
+        <span>WEEK 7</span>
+        <h4>ros2_control + Feedback</h4>
+        <ul>
+          <li>controllers</li>
+          <li>hardware interfaces</li>
+          <li>command vs state interfaces</li>
+          <li>feedback loops</li>
+          <li>simulation-to-hardware boundary</li>
+        </ul>
+        <div class="support"><b>Modern Robotics:</b> review basic robot control concepts when the controller logic becomes abstract.</div>
+        <label><input type="checkbox" data-task> Trace a velocity command down to a controller/hardware interface and state feedback back up.</label>
+      </article>
+
+      <article class="week">
+        <span>WEEK 8</span>
+        <h4>Intermediate ROS 2 + Capstone</h4>
+        <ul>
+          <li>QoS</li>
+          <li>lifecycle nodes</li>
+          <li>executors / concurrency</li>
+          <li>logging and diagnostics</li>
+          <li>failure handling</li>
+          <li>testing and Git review</li>
+        </ul>
+        <div class="support"><b>Capstone:</b> autonomous indoor courier in simulation.</div>
+        <label><input type="checkbox" data-task> Complete capstone with README, architecture diagram, tests and Git history.</label>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section codex" id="codex">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">PHASE 2 — AI / CODEX SUPERVISION</p>
+      <h2>After the sprint, change the relationship with AI.</h2>
+    </div>
+  </div>
+
+  <div class="ladder">
+    <article>
+      <span>BEFORE ROS</span>
+      <strong>You write most of the code.</strong>
+      <p>Use AI mainly for explanations, debugging hints, quizzes and review.</p>
+    </article>
+    <article>
+      <span>MONTH 1</span>
+      <strong>You design the ROS graph.</strong>
+      <p>AI may implement bounded nodes, but you inspect callbacks, interfaces and tests.</p>
+    </article>
+    <article>
+      <span>MONTH 2</span>
+      <strong>You specify subsystems.</strong>
+      <p>AI can implement larger pieces; simulation and official docs verify behavior.</p>
+    </article>
+    <article>
+      <span>POST-SPRINT</span>
+      <strong>You direct architecture.</strong>
+      <p>Codex accelerates implementation while you retain interface, safety, test and acceptance authority.</p>
+    </article>
+  </div>
+
+  <div class="codex-grid">
+    <article class="codex-card">
+      <h3>What you must be able to specify</h3>
+      <ul>
+        <li>node responsibility</li>
+        <li>input/output topics or actions</li>
+        <li>message types</li>
+        <li>QoS / timing expectations</li>
+        <li>failure behavior</li>
+        <li>test criteria</li>
+        <li>safety boundaries</li>
+      </ul>
+    </article>
+
+    <article class="codex-card">
+      <h3>What you must be able to review</h3>
+      <ul>
+        <li>Python/C++ structure</li>
+        <li>ROS graph and interfaces</li>
+        <li>logs and diagnostics</li>
+        <li>simulation behavior</li>
+        <li>Git diff / PR</li>
+        <li>tests</li>
+        <li>unsafe shortcuts</li>
+      </ul>
+    </article>
+
+    <article class="codex-card danger">
+      <h3>Architecture you should reject</h3>
+      <pre>LLM / agent
+      ↓
+direct motor command</pre>
+      <p>Language-model output should not directly control safety-critical actuators.</p>
+    </article>
+
+    <article class="codex-card good">
+      <h3>Preferred bounded architecture</h3>
+      <pre>AI intent
+   ↓
+policy / safety
+   ↓
+planner
+   ↓
+controller
+   ↓
+hardware interface
+   ↓
+actuator</pre>
+    </article>
+  </div>
+
+  <div class="gate codex-gate">
+    <span class="gate-label">CODEX READINESS GATE</span>
+    <h3>You are ready to use Codex seriously for robotics software when you can do these without AI.</h3>
+    <div class="gate-checks">
+      <label><input type="checkbox" data-task> Explain nodes, topics, services, actions, parameters and launch.</label>
+      <label><input type="checkbox" data-task> Read both Python and C++ ROS nodes.</label>
+      <label><input type="checkbox" data-task> Explain TF and a URDF tree.</label>
+      <label><input type="checkbox" data-task> Explain localization, mapping, planner, controller and costmap.</label>
+      <label><input type="checkbox" data-task> Use Git to review and revert AI-generated changes.</label>
+      <label><input type="checkbox" data-task> Run the system in Gazebo/RViz and diagnose a basic failure.</label>
+      <label><input type="checkbox" data-task> Explain sensor → estimation → planning → control → actuator.</label>
+      <label><input type="checkbox" data-task> Define acceptance tests before asking AI to implement.</label>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="after">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">AFTER THE TWO MONTHS</p>
+      <h2>Cancel the subscription and build depth through projects.</h2>
+      <p class="sub">You do not need to finish the entire robotics field before using AI. You need to know when your knowledge is insufficient.</p>
+    </div>
+  </div>
+
+  <div class="project-grid">
+    <article class="project">
+      <span>PROJECT A</span>
+      <h3>ROS Architecture Lab</h3>
+      <p>Multi-node Python/C++ system with topics, services, actions, launch and diagnostics.</p>
+    </article>
+    <article class="project">
+      <span>PROJECT B</span>
+      <h3>Autonomous Courier</h3>
+      <p>Simulated differential-drive robot with mapping, localization, Nav2 and obstacle recovery.</p>
+    </article>
+    <article class="project">
+      <span>PROJECT C</span>
+      <h3>AI-Governed Robot Interface</h3>
+      <p>AI proposes bounded goals; policy validates them; ROS actions execute through the navigation/control stack.</p>
+    </article>
+  </div>
+
+  <div class="later">
+    <h3>Then spiral outward only when your project needs it</h3>
+    <div class="later-flow">
+      <span>Manipulation / MoveIt</span>
+      <span>Perception / OpenCV</span>
+      <span>Embedded / microcontrollers</span>
+      <span>Controls / estimation</span>
+      <span>Robot security</span>
+      <span>Functional safety</span>
+      <span>Humanoid / legged robotics</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="certs">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">CREDENTIAL STRATEGY</p>
+      <h2>Use certificates selectively. Projects remain the stronger evidence.</h2>
+    </div>
+  </div>
+
+  <div class="cert-grid">
+    <article class="cert priority">
+      <span>HIGH PRIORITY</span>
+      <h3>The Construct ROS 2 Skills</h3>
+      <p>If available when you are ready, prioritize only the credentials that match your actual work:</p>
+      <ul>
+        <li>ROS 2 Basics — Python</li>
+        <li>ROS 2 Basics — C++</li>
+        <li>ROS 2 Navigation</li>
+      </ul>
+      <p class="note">TF and URDF certifications can be added if useful; do not collect all credentials just because they exist.</p>
+    </article>
+
+    <article class="cert">
+      <span>OPTIONAL EARLY</span>
+      <h3>GitHub Foundations</h3>
+      <p>Useful if you want a recognizable credential for Git/GitHub workflow, but your actual repository history is more important for robotics.</p>
+    </article>
+
+    <article class="cert">
+      <span>LATER</span>
+      <h3>MATLAB / Simulink Associate</h3>
+      <p>Valuable when your mechatronics and controls work becomes substantial. Do not add this to the first two-month ROS sprint.</p>
+    </article>
+
+    <article class="cert">
+      <span>MUCH LATER</span>
+      <h3>Industrial / safety training</h3>
+      <p>ROS-Industrial, vendor robot training and functional-safety education make more sense after you have strong ROS, controls and real hardware experience.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="schedule">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">WEEKLY RHYTHM</p>
+      <h2>Keep the parallel spiral manageable.</h2>
+    </div>
+  </div>
+
+  <div class="schedule-grid">
+    <article>
+      <h3>Free phase</h3>
+      <p><strong>60%</strong> programming/Linux/Git</p>
+      <p><strong>25%</strong> robotics math</p>
+      <p><strong>15%</strong> robotics concepts / ROS preview</p>
+    </article>
+    <article>
+      <h3>Paid Month 1</h3>
+      <p><strong>70%</strong> The Construct ROS work</p>
+      <p><strong>20%</strong> practice/project</p>
+      <p><strong>10%</strong> two complements for gaps</p>
+    </article>
+    <article>
+      <h3>Paid Month 2</h3>
+      <p><strong>60%</strong> Nav2/control/intermediate ROS</p>
+      <p><strong>30%</strong> capstone</p>
+      <p><strong>10%</strong> two complements for gaps</p>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="sources">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">REFERENCE BASE</p>
+      <h2>Primary resources used to design this pathway</h2>
+    </div>
+  </div>
+  <div class="sources">
+    <a href="https://www.theconstruct.ai/pricing/" target="_blank" rel="noopener">The Construct — plans and course access</a>
+    <a href="https://www.theconstruct.ai/" target="_blank" rel="noopener">The Construct — robotics curriculum</a>
+    <a href="https://docs.ros.org/en/ros2_documentation/" target="_blank" rel="noopener">ROS 2 official documentation</a>
+    <a href="https://docs.nav2.org/" target="_blank" rel="noopener">Nav2 official documentation</a>
+    <a href="https://gazebosim.org/docs/" target="_blank" rel="noopener">Gazebo official documentation</a>
+    <a href="https://modernrobotics.northwestern.edu/" target="_blank" rel="noopener">Modern Robotics — Northwestern</a>
+    <a href="https://www.w3schools.com/python/" target="_blank" rel="noopener">W3Schools Python</a>
+    <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noopener">W3Schools C++</a>
+    <a href="https://www.w3schools.com/bash/" target="_blank" rel="noopener">W3Schools Bash</a>
+    <a href="https://skills.github.com/" target="_blank" rel="noopener">GitHub Skills</a>
+    <a href="https://docs.github.com/en/get-started/showcase-your-expertise-with-github-certifications/about-github-certifications" target="_blank" rel="noopener">GitHub Certifications</a>
+    <a href="https://www.mathworks.com/learn/training/certification.html" target="_blank" rel="noopener">MathWorks Certifications</a>
+  </div>
+  <p class="source-note">Prices, course access and certification offerings can change. Re-check provider pages before paying or scheduling an exam.</p>
+</section>
+</main>
+
+<footer>
+  <div>
+    <strong>Robotics Parallel Spiral</strong>
+    <p>Designed for progressive technical independence: learn → build → review → direct AI → deepen.</p>
+  </div>
+  <a href="#top">Back to top ↑</a>
+</footer>
+<script src="app.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));
+}
+</script>
+</body>
+</html>
